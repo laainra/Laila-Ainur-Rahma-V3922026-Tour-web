@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css\about.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="icon" type="image/x-icon" href="assets\logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="container">
+
+        <video autoplay loop muted play-inline class="vid">
+            <source src="assets\abt.mp4">
+        </video>
+
+        <div class="header">
+            <nav>
+                <a href="index.html">
+                    <img class="logo" src="assets\Logo.png" alt="Logo" />
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="about">
+                <h1 class="us">About Us</h1>
+                <p>
+                    We are the best travel agent in Indonesia
+                    <br/> Find your favorite destinations and enjoy your trip
+                </p>
+            </div>
+
+            <div class="team">
+                <h1>Our Team</h1>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="assets\pic-1.jpg" alt="Founder">
+                    <div class="contain">
+                        <h2>Jeno Lee</h2>
+                        <p class="title">CEO & Founder</p>
+                        <p>23 years old. Founder and CEO of Luv Tour & Travel. A bussiness man since wa 19 years old</p>
+                        <p>jenolee@luv.com</p>
+                        <p><button class="button" onclick="jeno()">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="assets\pic-2.jpg" alt="Programmer">
+                    <div class="contain">
+                        <h2>Zihao Wang</h2>
+                        <p class="title">Programmer</p>
+                        <p>22 years old. Freelance Frontend Web developer for 3 years</p>
+                        <p>zeuhao@luv.com</p>
+                        <p><button class="button" onclick="zihao()">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="assets\pic-3.jpg" alt="Designer">
+                    <div class="contain">
+                        <h2>Sunghoon Park</h2>
+                        <p class="title">Designer</p>
+                        <p class="psh">21 years old. A full time UI & UX Designer and Frontend Web developer for 2 years </p>
+                        <p>pshpsh@luv.com</p>
+                        <p><button class="button" onclick="psh()">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        function jeno() {
+            if (confirm("Are you sure to contact me?\n Click OK to redirect")) {
+                window.location.assign("https://www.instagram.com/leejen_o_423/?hl=en");
+            } else {
+                window.location.reload();
+            }
+        }
+
+        function zihao() {
+            if (confirm("Are you sure to contact me?\n Click OK to redirect")) {
+                window.location.assign("https://www.instagram.com/chromoeg/?hl=en");
+            } else {
+                window.location.reload();
+            }
+        }
+
+        function psh() {
+            if (confirm("Are you sure to contact me?\n Click OK to redirect")) {
+                window.location.assign("https://www.instagram.com/enhypen/");
+            } else {
+                window.location.reload();
+            }
+        }
+    </script>
+</body>
+
+</html>

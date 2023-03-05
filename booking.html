@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Now</title>
+    <link rel="stylesheet" href="css\booking.css">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="icon" type="image/x-icon" href="assets\logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="contain">
+        <video autoplay loop muted play-inline class="vid">
+            <source src="assets\bgbook.mp4">
+        </video>
+
+
+        <div class="header">
+            <nav>
+                <a href="index.html">
+                    <img class="logo" src="assets\Logo.png" alt="Logo" />
+                </a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="about">
+                <h1>Choose Your Destination</h1>
+                <button class="button" onclick="openForm()">Book Now</button>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img class="pict" src="assets\Seoul.jpg" alt="Founder">
+                    <div class="container">
+                        <h2>Seoul</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img class="pict" src="assets\paris.jpg" alt="Programmer">
+                    <div class="container">
+                        <h2>Paris</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img class="pict" src="assets\bali.jpg" alt="Designer">
+                    <div class="container">
+                        <h2>Bali</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img class="pict" src="assets\dubai.jpg" alt="Designer">
+                    <div class="container">
+                        <h2>Dubai</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img class="pict" src="assets\hawaii.jpg" alt="Designer">
+                    <div class="container">
+                        <h2>Hawaii</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img class="pict" src="assets\bangkok.jpg" alt="Designer">
+                    <div class="container">
+                        <h2>Bangkok</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="popup" id="popup">
+                <form>
+                    <div class="elem-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+                    </div>
+                    <div class="elem-group">
+                        <label for="email">Your E-mail</label>
+                        <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+                    </div>
+                    <hr>
+                    <div class="elem-group">
+                        <label for="Guest">Guest</label>
+                        <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+                    </div>
+                    <div class="elem-group">
+                        <label for="booking-date">Booking Date</label>
+                        <input type="date" id="checkin-date" name="checkin" required>
+                    </div>
+                    <div class="elem-group">
+                        <label for="destination">Select Destination</label>
+                        <select id="destination" name="destination" required>
+                        <option value="">Choose a Destination from the List</option>
+                        <option value="seoul">Seoul</option>
+                        <option value="paris">Paris</option>
+                        <option value="bali">Bali</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="bangkok">Bangkok</option>
+                    </select>
+                    </div>
+                    <hr>
+                    <div class="elem-group">
+                        <label for="message">Anything Else?</label>
+                        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+                    </div>
+                    <button type="submit">Book Destination</button>
+                    <button type="reset" onclick="closeForm()">Cancel</button>
+                </form>
+
+            </div>
+
+            <div class="footer">
+                <h5>&copy; 2023 Laila Ainur Rahma (V3922026)</h5>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
